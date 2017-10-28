@@ -47,9 +47,12 @@ api <- publishService(
 answer <- api$consume()$output("answer")
 identical(answer, "Test")     # TRUE
 
+remoteLogout()
 
 
 #Change Workspace to Microsoft R Client
+print("Check that it's running Microsoft R Client.")
+
 Revo.version
 #Remote Login (Local)
 remoteLogin("http://localhost:12800", username = "admin", password = "P@ssw0rd!@#$", session = TRUE)
@@ -59,9 +62,3 @@ exit
 Revo.version
 
 
-##Now Let's try remote HDInsight
-##Remote Login (R Server on HDInsight)
-##remoteLogin("http://RServer4Hdi-sehan-ed-ssh.azurehdinsight.net:12800", username = "admin", password = "P@ssw0rd!@#$", session = TRUE)
-
-
-remoteLogout()
