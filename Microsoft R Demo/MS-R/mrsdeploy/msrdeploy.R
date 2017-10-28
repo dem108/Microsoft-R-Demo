@@ -1,5 +1,6 @@
 library(mrsdeploy)
 
+print("Make sure you set working directory.")
 
 # Simple R script
 #cat("answer <- 'Test'", file = "./MS-R/mrsdeploy/scripts/projectA/test.R")
@@ -15,6 +16,8 @@ cat("answer <- 'Test'", file = "./scripts/projectA/test.R")
 #
 # The default 'data-dir' is the current working directory {{ getwd() }}}
 #
+
+
 
 #serviceOption()$set("data-dir", "D:/Resources/Topic-Tech/10 Demo-HandsOn/MRS-Training/20 Advanced/50 MRS - RTVS Projects/Microsoft R Demo/Microsoft R Demo/MS-R/mrsdeploy/scripts")
 #serviceOption()$set("data-dir", "./MS-R/mrsdeploy/scripts")
